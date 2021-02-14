@@ -1,0 +1,43 @@
+{
+    "name": "laravel/package",
+    "description": "Laravel Package Template",
+    "type": "library",
+    "require": {
+        "php": "^7.4",
+        "illuminate/support": "^6|^7|^8"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.0"
+    },
+    "authors": [
+        {
+            "name": "Panji Setya Nur Prawira",
+            "email": "kstar.panjinamjaelf@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4" : {
+            "Laravel\\Package\\" : "src"
+        }
+    },
+    "autoload-dev" : {
+        "psr-4" : {
+            "Laravel\\Package\\Tests\\" : "tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Laravel\\Package\\ServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
